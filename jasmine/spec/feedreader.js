@@ -107,6 +107,22 @@ $(function() {
          * by the loadFeed function that the content actually changes.
          * Remember, loadFeed() is asynchronous.
          */
+        let feed0;
+
+        beforeEach(function(done){
+            //load 0th feed and store it
+            loadFeed(0, function(){
+                feed0 = $('.feed').html();
+                //load next feed to test it against old feed in it statement
+                loadFeed(1, function(done){
+                    done();
+                });
+            })
+        })
+
+        it('newly loaded field is different', function(){
+            expect($('.feed').html()).not.toBe(feed0);
+        });
 
     });
 
