@@ -6,7 +6,7 @@
 
 ## About
 
-This is an RSS Feed application. A test suite has been implemented using the Jasmine library to ensure proper functioning of the application. This project is part of Udacity's Front End Nanodegree Program.
+This is an RSS Feed application. A test suite has been designed using the Jasmine library to ensure proper functioning of the application. This project is part of Udacity's Front End Nanodegree Program.
 
 ## How to Run
 
